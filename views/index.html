@@ -1,10 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>DELI-VERY</title>
-    </head>
-    <body>
-        <h1>Hello World!!!</h1>
-        <a href="/map" target="_blank">Open map in new window</a>.
-    </body>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>McObi's City Burgers</title>
+    <link rel="stylesheet" href="css/deli-very.css">
+  </head>
+  <body>
+    <main>
+
+      <h1 id="header">Welcome to McObi's City Burgers Online</h1>
+
+
+      <section id="top-section">
+        <h2>Select burger</h2>
+
+        <div class="wrapper">
+          <div class="box a11">Double Trouble</div>
+          <div class="box a12">Generic Burger</div>
+          <div class="box a13">Depressing, No Dressing</div>
+          <div class="box a21">
+            <img src="http://hugbeta.com/beta/hardees-new/wp-content/uploads/2016/09/1014_Big-Hardee-Sandwich.png" alt="Span" title="Another in-line element" width="100">
+          </div>
+          <div class="box a22">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cheeseburger.png/2560px-Cheeseburger.png" alt="Span" title="Another in-line element" width="100">
+          </div>
+          <div class="box a23"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NYC-Diner-Bacon-Cheeseburger.jpg/1920px-NYC-Diner-Bacon-Cheeseburger.jpg" alt="Span" title="Another in-line element" width="100"></div>
+          <div class="box a31">
+            <ul><li>1500 kCal</li><li>Contains Gluten</li><li>Contains Lactose</li>
+            </div>
+            <div class="box a32">
+              <ul><li>600 kCal</li><li>Contains Plastic</li><li>Contains Aspartam</li></ul></div>
+              <div class="box a33">
+                <ul><li>700 kCal</li><li>Contains Gluten</li><li>Contains Lactose</li></ul></div>
+              </div>
+            </div>
+
+<!--
+        <table class="menu">
+          <thead>
+            <tr>
+              <td>Double Trouble</td>
+              <td>Generic Burger</td>
+              <td>Depressing, No Dressing</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="http://hugbeta.com/beta/hardees-new/wp-content/uploads/2016/09/1014_Big-Hardee-Sandwich.png" alt="Span" title="Another in-line element" width="100">
+              </td>
+              <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cheeseburger.png/2560px-Cheeseburger.png" alt="Span" title="Another in-line element" width="100">
+              </td>
+              <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NYC-Diner-Bacon-Cheeseburger.jpg/1920px-NYC-Diner-Bacon-Cheeseburger.jpg" alt="Span" title="Another in-line element" width="100">
+              </td>
+            </tr>
+            <tr  class="selection" id="ingredients">
+              <td>
+                <ul><li>1500 kCal</li><li>Contains Gluten</li><li>Contains Lactose</li>
+              </td>
+              <td>
+                <ul><li>600 kCal</li><li>Contains Plastic</li><li>Contains Aspartam</li>
+              </td>
+              <td><ul><li>700 kCal</li><li>Contains Gluten</li><li>Contains Lactose</li>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+-->
+      </section>
+      <section id="contact-section">
+        <form >
+          <div id="customer">
+          <p>
+            <label for="fullname">Full name</label><br>
+            <input type="text" id="fullname" name="fn" required="required" placeholder="Full name">
+          </p>
+          <p>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+          </p>
+          <p>
+            <label for="street">Street</label><br>
+            <input type="text" id="street" name="st" required="required" placeholder="Street name">
+          </p>
+          <p>
+            <label for="house">House</label><br>
+            <input type="number" id="house" name="no" required="required" placeholder="House number">
+          </p>
+          <p>
+            <label for="payment">Payment options</label><br>
+            <select id="payment" name="payment">
+              <option>Credit Card</option>
+              <option>Klarna</option>
+              <option>Swish</option>
+              <option>Cash</option>
+            </select>
+          </p>
+          <p>
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" value="male" required="required">Male</input>
+            <input type="radio" name="gender" value="female" required="required">Female</input>
+            <input type="radio" name="gender" value="nonbinary" required="required">Non-binary</input>
+            <input type="radio" name="gender" value="undisclosed" required="required" checked>Undisclosed</input>
+          </p>
+        </div>
+          <p>
+            <button type="submit"><img src="./img/NSA.png" height="24" width="24"> Submit Info</button>
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>
+    </footer>
+  </body>
 </html>

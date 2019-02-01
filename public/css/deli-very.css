@@ -1,7 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    background-color: #f9f9f9;
+    color: #333;
 }
+
+.selection {
+    color: #d3d3d3;
+}
+
+section {
+    margin: 0;
+    padding: 20px;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+    -o-box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+}
+
+
+#top-section {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+td {
+    /*padding-right: 20px;
+    padding-left: 20px;*/
+    center;
+}
+
+#contact-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #dedede;
+    color: #555;
+
+}
+
+#header {
+    text-align: center;
+    line-height: 200px;
+    margin: 0;
+    background-image: url("http://pomfy.asuscomm.com/mekpw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    color: #f9f9f9;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.6);
+    opacity: 1;
+}
+
+
+#ingredients {
+    text-transform: inherit;
+}
+
+.menu {
+    width: 50%;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: none;
+    border-radius: 2px;
+    border-width: 2px;
+    border-color: #dedede;
+    padding: 4px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    -o-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 15px;
+    width: auto;
+    border: none;
+    border-radius: 2px;
+    background: #d64937;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    -o-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    color: #f9f9f9;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+button:hover, button:focus {
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+input[type="radio"] {
+    height: .7em;
+    width: .7em;
+}
+
 
 .view-box {
 	width: 90%;
@@ -11,33 +120,94 @@ body {
 	border: 1px solid rgba(0,0,0,0.4);
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
+
 #dots {
-	position: relative;
-	margin: 0;
-	padding: 0;
-	background: url(/img/polacks.jpg);
-	background-repeat: no-repeat;
-	width:1920px;
-	height: 1078px;
-	cursor: crosshair;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: url(/img/polacks.jpg);
+    background-repeat: no-repeat;
+    width:1920px;
+    height: 1078px;
+    cursor: crosshair;
 }
 
 #dots div {
-	position: absolute;
-	background: black;
-	color: white;
-	border-radius: 10px;
-	width:20px;
-	height:20px;
-	text-align: center;
+    position: absolute;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    width:20px;
+    height:20px;
+    text-align: center;
 }
 
 #orderList {
-	top:1em;
-	left:1em;
-	position: absolute;
-	z-index: 2;
-	color:black;
-	background: rgba(255,255,255, 0.5);
-	padding: 1em;
+    top:1em;
+    left:1em;
+    position: absolute;
+    z-index: 2;
+    color:black;
+    background: rgba(255,255,255, 0.5);
+    padding: 1em;
+}
+
+
+.wrapper {
+     display: grid;
+     grid-gap: 10px;
+		 grid-template-columns: 300px 300px 350px;
+		 grid-template-rows: 50px 100px 150px;
+     color: #444;
+ }
+
+ .box {
+     color: #fff;
+     border-radius: 5px;
+     padding: 20px;
+     font-size: 150%;
+		 color: #131313;
+ }
+
+.a11 {
+     grid-column: 1;
+		 grid-row: 1 ;
+}
+.a12 {
+		grid-column: 2;
+		grid-row: 1 ;
+}
+
+.a13 {
+		grid-column: 3;
+		grid-row: 1 ;
+}
+
+.a21 {
+		 grid-column: 1;
+		grid-row: 2 ;
+}
+.a22 {
+	 grid-column: 2;
+	 grid-row: 2 ;
+}
+
+.a23 {
+	 grid-column: 3;
+	 grid-row: 2 ;
+}
+
+
+.a31 {
+		 grid-column: 1;
+		grid-row: 3 ;
+}
+.a32 {
+	 grid-column: 2;
+	 grid-row: 3 ;
+}
+
+.a33 {
+	 grid-column: 3;
+	 grid-row: 3 ;
 }
