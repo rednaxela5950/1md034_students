@@ -25,7 +25,8 @@ section {
 
 #top-section {
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    height: 50%;
 }
 
 td {
@@ -43,17 +44,16 @@ td {
 }
 
 #header {
-    text-align: center;
-    line-height: 200px;
-    margin: 0;
     background-image: url("http://pomfy.asuscomm.com/mekpw.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
     height: 200px;
     color: #f9f9f9;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.6);
-    opacity: 1;
+    margin: 10px;
+		text-align: center;
+		line-height: 200px;
+    opacity: 0.5;
 }
 
 
@@ -156,9 +156,11 @@ input[type="radio"] {
 .wrapper {
      display: grid;
      grid-gap: 10px;
-		 grid-template-columns: 300px 300px 350px;
+		 grid-template-columns: 200px 200px  200px 200px 200px;
 		 grid-template-rows: 50px 100px 150px;
      color: #444;
+		 width: 100%;
+     height: 300px;
  }
 
  .box {
@@ -183,6 +185,18 @@ input[type="radio"] {
 		grid-row: 1 ;
 }
 
+
+.a14 {
+		grid-column: 4;
+		grid-row: 1 ;
+}
+
+
+.a14 {
+		grid-column: 5;
+		grid-row: 1 ;
+}
+
 .a21 {
 		 grid-column: 1;
 		grid-row: 2 ;
@@ -198,6 +212,16 @@ input[type="radio"] {
 }
 
 
+.a24 {
+	 grid-column: 4;
+	 grid-row: 2 ;
+}
+
+.a25 {
+	 grid-column: 5;
+	 grid-row: 2 ;
+}
+
 .a31 {
 		 grid-column: 1;
 		grid-row: 3 ;
@@ -209,5 +233,31 @@ input[type="radio"] {
 
 .a33 {
 	 grid-column: 3;
+	 grid-row: 3 ;
+}
+
+
+.a31 {
+		 grid-column: 1;
+		grid-row: 3 ;
+}
+.a32 {
+	 grid-column: 2;
+	 grid-row: 3 ;
+}
+
+
+.a33 {
+	 grid-column: 3;
+	 grid-row: 3 ;
+}
+
+.a34 {
+	 grid-column: 4;
+	 grid-row: 3 ;
+}
+
+.a35 {
+	 grid-column: 5;
 	 grid-row: 3 ;
 }

@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>McObi's City Burgers</title>
     <link rel="stylesheet" href="css/deli-very.css">
-    <script src="https://vuejs.org/js/vue.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/vue_script.js" defer></script>
+    <!-- script src="https://vuejs.org/js/vue.js"></script -->
+    <script src="js/menu.js" defer></script>
+    <script src="js/js_script.js" defer></script>
+    <!-- script src="js/vue_script.js"></script -->
   </head>
   <body>
     <main>
@@ -17,28 +18,6 @@
         <h2>Select burger</h2>
 
         <div id="burgers">
-          <div class='wrapper row'>
-            <div v-for='(item, index) in food' class="column">
-              <h3>{{item.name}}</h3>
-          		<img class='productimg' v-bind:src=item.img width='100'>
-          		<div class='contents'>
-          		    <ul>
-                    <li>
-        						{{item.kCal}} kCal
-      							</li>
-                    <li>
-                      <div v-if="item.gluten">Contains Gluten</div>
-                      <div v-if="!item.gluten">Gluten Free</div>
-      							</li>
-                    <li >
-                      <div v-if="item.lactose">Contains Lactose</div>
-                      <div v-if="!item.lactose">Lactose Free</div>
-                    </li>
-    						</ul>
-                <input type="checkbox" name="orderbox" onChange="updateOrder()" >
-                </div>
-            </div>
-            </div>
         </div>
 
       </section>
